@@ -19,6 +19,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
+    
     @IBAction func recordPressed(_ sender: AnyObject) {
         if(soundRecorder?.isRecording == true)
         {
@@ -42,6 +43,7 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
             }
         }
     }
+    
     @IBAction func playPressed(_ sender: AnyObject) {
         if(soundPlayer?.isPlaying == true)
         {
@@ -119,4 +121,4 @@ class ViewController: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDe
     }
     
     
-}
+}}
